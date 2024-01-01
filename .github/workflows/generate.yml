@@ -1,0 +1,33 @@
+name: Generate Templates
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+
+jobs:
+  deploy-normal:
+    name: Deploy Normal
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git config
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global init.defaultBranch normal
+      - name: Generate Templates
+        run: |
+          curl -fsSLo generate.sh https://raw.githubusercontent.com/senzyo/sing-box-templates/master/generate.sh
+          curl -fsSLo mixed-normal.json https://raw.githubusercontent.com/senzyo/sing-box-templates/master/mixed-normal.json
+          curl -fsSLo tun-normal.json https://raw.githubusercontent.com/senzyo/sing-box-templates/master/tun-normal.json
+          chmod +x generate.sh
+          ./generate.sh mixed-normal.json mixed
+          wait
+          ./generate.sh tun-normal.json tun
+      - name: Public Templates
+        run: |
+          git init
+          git add -A mixed tun
+          git commit -m "Generate"
+          git remote add origin https://${{ secrets.PERSONAL_TOKEN }}@github.com/senzyo/sing-box-templates.git
+          git push -uf origin normal:normal
