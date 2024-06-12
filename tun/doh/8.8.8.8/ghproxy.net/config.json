@@ -71,7 +71,7 @@
       "inet4_address": "172.19.0.1/30",
       "gso": false,
       "auto_route": true,
-      "strict_route": true,
+      "strict_route": false,
       "endpoint_independent_nat": false,
       "stack": "mixed",
       "exclude_package": [
