@@ -40,7 +40,6 @@ cdn_snippet_list=(
   https://testingcf.jsdelivr.net/gh/senzyo/sing-box-rules@master/
   https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/
   https://ghproxy.net/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/
-  https://ghproxy.senzyo.net/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/
 )
 
 for dns_global in "${dns_global_list[@]}"; do

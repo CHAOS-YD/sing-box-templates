@@ -206,10 +206,6 @@ https://mirror.ghproxy.com/https://raw.githubusercontent.com/senzyo/sing-box-rul
 https://ghproxy.net/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/download-process.srs
 ```
 
-```
-https://ghproxy.senzyo.net/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/download-process.srs
-```
-
 可自行替换模板中使用的 CDN, 替换前推荐对这些 CDN 的域名进行 [网站测速](https://www.itdog.cn/http/)。不推荐 `cdn.jsdelivr.net`。
 
 ## 3 模板推荐
