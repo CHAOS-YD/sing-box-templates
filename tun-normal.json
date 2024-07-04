@@ -165,7 +165,7 @@
       "interrupt_exist_connections": true
     },
     {
-      "tag": "📥 Download",
+      "tag": "📥 Downloader",
       "type": "selector",
       "outbounds": [
         "🚀 默认出站",
@@ -463,14 +463,14 @@
         "mode": "and",
         "rules": [
           {
-            "rule_set": "download-process"
+            "rule_set": "downloader"
           },
           {
             "rule_set": ["geoip_cn", "geosite_cn"],
             "invert": true
           }
         ],
-        "outbound": "📥 Download"
+        "outbound": "📥 Downloader"
       },
       {
         "rule_set": "geosite_apple",
@@ -551,10 +551,10 @@
         "update_interval": "3d"
       },
       {
-        "tag": "download-process",
+        "tag": "downloader",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghproxy.net/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/download-process.srs",
+        "url": "https://ghproxy.net/https://raw.githubusercontent.com/senzyo/sing-box-rules/master/downloader.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       },

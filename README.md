@@ -236,7 +236,7 @@ https://raw.githubusercontent.com/senzyo/sing-box-templates/normal/tun/doh/8.8.8
 
 ### 4.1 下载进程分流
 
-由于暂时无法准确分流 BitTorrent 流量, 干脆匹配 [下载软件的进程](https://raw.githubusercontent.com/senzyo/sing-box-rules/master/download-process.json) 来一刀切。使用 Bittorrent 方式下载时, 手动切换 `📥 下载` 分组的策略, 改用 `🐢 直连`。
+由于暂时无法准确分流 BitTorrent 流量, 干脆匹配 [下载软件的进程](https://raw.githubusercontent.com/senzyo/sing-box-rules/master/downloader.json) 来一刀切。使用 Bittorrent 方式下载时, 手动切换 `📥 Downloader` 分组的策略, 改用 `🐢 直连`。
 
 ### 4.2 TUN 模式的问题
 
