@@ -87,6 +87,7 @@ echo $url_dl
   {
     "type": "tun",
     "inet4_address": "172.19.0.1/30",
+    "inet6_address": "fdfe:dcba:9876::1/126",
     "gso": false,
     "auto_route": true,
     "strict_route": true,

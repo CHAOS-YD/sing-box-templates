@@ -59,7 +59,7 @@
       }
     ],
     "final": "国外DNS",
-    "strategy": "ipv4_only",
+    "strategy": "prefer_ipv4",
     "disable_cache": false,
     "disable_expire": false,
     "independent_cache": true,

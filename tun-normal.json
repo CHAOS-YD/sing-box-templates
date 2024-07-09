@@ -59,7 +59,7 @@
       }
     ],
     "final": "国外DNS",
-    "strategy": "ipv4_only",
+    "strategy": "prefer_ipv4",
     "disable_cache": false,
     "disable_expire": false,
     "independent_cache": true,
@@ -76,6 +76,7 @@
     {
       "type": "tun",
       "inet4_address": "172.19.0.1/30",
+      "inet6_address": "fdfe:dcba:9876::1/126",
       "gso": false,
       "auto_route": true,
       "strict_route": true,
