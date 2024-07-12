@@ -106,7 +106,7 @@ echo $url_dl
   },
   {
     "type": "mixed",
-    "listen": "127.0.0.1",
+    "listen": "::",
     "listen_port": 7890,
     "sniff": true,
     "sniff_override_destination": false
@@ -120,7 +120,7 @@ echo $url_dl
 "inbounds": [
   {
     "type": "mixed",
-    "listen": "127.0.0.1",
+    "listen": "::",
     "listen_port": 7890,
     "sniff": true,
     "sniff_override_destination": false
